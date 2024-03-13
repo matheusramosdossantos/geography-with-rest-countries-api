@@ -41,7 +41,7 @@ export default function Country() {
       >
         <section className={styles.card}>
           <div className={styles.cardHeader}>
-            <Link to="/">
+            <Link to="/geography-with-rest-countries-api">
               <Button className={styles.backButton} text="↺" />
             </Link>
             <img src={country.flags.svg} className={styles.flag} />

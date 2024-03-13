@@ -65,14 +65,14 @@ export default function Header({ text2, imgSrc, imgAlt }) {
           text="Country name"
         />
         <br />
-        <Link to={"/"}>
+        <Link to={"/geography-with-rest-countries-api"}>
           <Button
             className={styles.searchButton}
             onClick={() => fetchCountry(searchTerm)}
             text="Find"
           />
         </Link>
-        <Link to={"/"}>
+        <Link to={"/geography-with-rest-countries-api"}>
           <Button
             className={styles.resetButton}
             onClick={() => {

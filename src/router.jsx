@@ -11,7 +11,7 @@ import Country from "./pages/Country";
 // Router configurations
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/geography-with-rest-countries-api",
     element: <RootLayout />,
     children: [
       {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/:commonName",
+        path: "geography-with-rest-countries-api/:commonName",
         element: <Country />,
       },
     ],

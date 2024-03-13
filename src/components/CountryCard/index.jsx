@@ -41,7 +41,10 @@ export default function CountryCard({
 
   return (
     <div className={styles.card} key={commonName}>
-      <Link to={`/${commonName}`} location={location}>
+      <Link
+        to={`geography-with-rest-countries-api/${commonName}`}
+        location={location}
+      >
         <img src={flags} className={styles.flag} onClick={saveScrollPosition} />
       </Link>
       <h1 className={styles.commonName}>{commonName}</h1>
@@ -67,7 +70,10 @@ export default function CountryCard({
         </div>
       </div>
       <hr />
-      <Link to={`/${commonName}`} className={styles.link}>
+      <Link
+        to={`geography-with-rest-countries-api/${commonName}`}
+        className={styles.link}
+      >
         <div className={styles.coatOfArmsDiv}>
           <img
             src={coatOfArms}
