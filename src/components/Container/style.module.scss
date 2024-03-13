@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.homeContainer {
+  background: url("/images/night-stars-background.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  margin-bottom: -1rem;
+  padding: 1rem;
+  min-width: 1300px;
+}
+
+.countryContainer {
+  display: flex;
+  background: url("/images/night-stars-background.jpg");
+  justify-content: center;
+  padding: 2rem;
+  min-width: 1300px;
+
+  .backButton {
+    height: 80vh;
+    border: solid 1px #757575;
+    border-radius: 1px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.5s;
+    font-size: 3rem;
+  }
+
+  .backButton:hover {
+    color: #505090;
+    border-color: #505090;
+  }
+
+  .cardHeader {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .card {
+    gap: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    transition: 1s;
+    align-self: center;
+    align-items: center;
+  }
+
+  .commonName {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 5rem;
+  }
+
+  .officialName {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+    text-align: center;
+    margin: -1rem 0 1rem 0;
+  }
+
+  .flag {
+    height: 80vh;
+    width: 135vh;
+    margin-right: 16rem;
+  }
+
+  .countryInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    gap: 0rem 25rem;
+    p,
+    li {
+      font-size: 1.2rem;
+    }
+  }
+
+  .coatOfArms {
+    width: 60vh;
+    margin: 1rem;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1550px) {
+  .countryContainer {
+    .cardHeader {
+      grid-template-columns: 0.5fr 8fr;
+    }
+    .flag {
+      width: 100%;
+      margin-right: 0;
+    }
+    .backButton {
+      font-size: 5rem;
+      padding: 2rem;
+      margin-left: -5rem;
+    }
+
+    .commonName {
+      font-size: 10rem;
+    }
+
+    .officialName {
+      font-size: 7rem;
+    }
+
+    .countryInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      padding-left: 10rem;
+      h5,
+      p,
+      li {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .countryContainer {
+    width: 1300px;
+
+    .cardHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .flag {
+      padding: 1rem;
+      margin: 0;
+    }
+    .backButton {
+      height: 5rem;
+      width: 70vh;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .commonName {
+      font-size: 7rem;
+    }
+
+    .officialName {
+      font-size: 4rem;
+    }
+
+    .countryInfo {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      h5,
+      p,
+      li {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .countryContainer {
+    width: 1300px;
+
+    .cardHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .flag {
+      padding: 1rem;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .backButton {
+      font-size: 4rem;
+      height: 7rem;
+      width: 70vh;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .commonName {
+      font-size: 15rem;
+    }
+
+    .officialName {
+      font-size: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    .countryInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      padding-left: 0;
+      gap: 0rem 10rem;
+      h5,
+      p,
+      li {
+        font-size: 5rem;
+        width: 80vh;
+      }
+    }
+    .coatOfArms {
+      margin: 5rem;
+      width: 40rem;
+    }
+  }
+}

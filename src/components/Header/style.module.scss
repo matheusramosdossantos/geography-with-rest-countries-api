@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  background-color: #111111;
+  min-width: 1300px;
+}
+
+.earthGif {
+  scale: (0.7);
+  width: 9rem;
+  height: 9rem;
+  margin: -3rem 0rem 1rem 5rem;
+}
+
+.searchItem {
+  margin: 2rem 2.5rem 1rem 2.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.searchInput {
+  width: 30rem;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.searchLabel {
+  margin: 1rem 0 0 0;
+  color: #505090;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.searchInput:focus ~ .searchLabel,
+.hasValue {
+  top: -20px;
+  font-size: 12px;
+  color: #f8f8f8;
+}
+
+.searchInput[type="search"]::-webkit-search-cancel-button,
+.searchInput[type="search"]::-webkit-search-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.searchButton {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem;
+  border: solid 1px #757575;
+  border-radius: 1px;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.searchButton:hover {
+  color: #505090;
+}
+
+.resetButton {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem;
+  border: solid 1px #757575;
+  border-radius: 1px;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.resetButton:hover {
+  color: #505090;
+}
+
+.about {
+  margin: 4rem 6rem 2.5rem 2.5rem;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px; /* Altura da borda inferior */
+  background-color: #505090; /* Cor da borda inferior */
+  transform-origin: bottom right;
+  transform: scaleX(0); /* Inicialmente, a borda está invisível */
+  transition: transform 0.3s ease-in-out;
+}
+
+.about:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(
+    1
+  ); /* Aumenta a largura da borda inferior durante a animação */
+}
+
+@media (min-width: 1550px) {
+  .earthGif {
+    scale: (1);
+    margin-left: 8rem;
+  }
+
+  .searchLabel,
+  .searchInput,
+  .searchButton,
+  .resetButton {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    width: 1300px;
+  }
+  .earthGif {
+    scale: (1);
+    margin-left: 6rem;
+  }
+
+  .searchLabel,
+  .searchInput,
+  .searchButton,
+  .resetButton {
+    font-size: 2rem;
+  }
+
+  .about {
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    width: 1300px;
+  }
+  .earthGif {
+    margin-top: 0.5rem;
+  }
+  .searchLabel,
+  .searchInput,
+  .searchButton,
+  .resetButton {
+    font-size: 3rem;
+  }
+
+  .searchInput:focus ~ .searchLabel,
+  .hasValue {
+    top: -20px;
+    font-size: 2rem;
+    color: #f8f8f8;
+  }
+
+  .about {
+    h3 {
+      font-size: 4rem;
+    }
+  }
+}
