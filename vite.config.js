@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/geography-with-rest-countries-api",
+  base: "/geography-with-rest-countries-api/",
 });
