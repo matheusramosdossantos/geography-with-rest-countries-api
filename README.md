@@ -17,5 +17,3 @@ This project is to practice my skills on integration with APIs. Also I could pra
 - JavaScript;
 - ReactJS;
 - Vite.
-
-##
