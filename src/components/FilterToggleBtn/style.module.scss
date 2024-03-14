@@ -9,6 +9,11 @@
   border: none;
   background-color: #ffffff;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.filterButton:hover {
+  scale: (1.1);
 }
 
 .adjustIcon {

@@ -17,7 +17,7 @@ export default function RootLayout() {
         className={styles.header}
         text1="Geography"
         text2="About"
-        imgSrc="\images\gifs\earth.gif"
+        imgSrc="\geography-with-rest-countries-api\images\gifs\earth.gif"
         imgAlt="Earth Gif"
       />
       <Outlet />
@@ -26,8 +26,8 @@ export default function RootLayout() {
         aboutText="Project done with JavaScript, React and Sass. Also was used Rest Countries API."
         srcIcon1="https://github.com/matheusramosdossantos"
         srcIcon2="https://www.linkedin.com/in/matheus-ramos-front-enddeveloper/"
-        srcImageIcon1="\images\icons8-github-128.png"
-        srcImageIcon2="\images\icons8-linkedin-100.png"
+        srcImageIcon1="\geography-with-rest-countries-api\images\icons8-github-128.png"
+        srcImageIcon2="\geography-with-rest-countries-api\images\icons8-linkedin-100.png"
         madeBy="Made by Matheus Ramos dos Santos"
       />
     </>

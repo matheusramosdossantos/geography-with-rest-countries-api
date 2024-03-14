@@ -32,11 +32,9 @@ export default function FilterToggleBtn() {
 
   const { handleFilter, selectedContinents } = useContext(CountriesContext);
 
-  // Function to close offcanvas and clear states.
+  // Function to close offcanvas.
   const toggleOffcanvas = () => {
     setIsOpen(!isOpen);
-    setMinGeographicalSizeInput("");
-    setMaxGeographicalSizeInput("");
   };
 
   // Obs.: I divided these three functions because this ensures that it will returns the countries with the updated informations.
@@ -74,7 +72,7 @@ export default function FilterToggleBtn() {
         : null;
 
     return handleFilter(
-      selectedContinents,
+      selectedContinents.join(", "),
       { min, max },
       { min: minPopulationSizeInput, max: maxPopulationSizeInput }
     );
@@ -96,7 +94,7 @@ export default function FilterToggleBtn() {
       <Button
         text={
           <img
-            src="\images\icons8-adjust-48.png"
+            src="\geography-with-rest-countries-api\images\icons8-adjust-48.png"
             alt="adjust-icon"
             className={styles.adjustIcon}
           />
@@ -179,6 +177,7 @@ export default function FilterToggleBtn() {
             <Input
               id="minPopulationInput"
               type="number"
+              value={minPopulationSizeInput}
               onChange={(e) => setMinPopulationSizeInput(e.target.value)}
               onBlur={handlePopulationSizeChange}
               className={styles.input}
@@ -190,6 +189,7 @@ export default function FilterToggleBtn() {
             <Input
               id="maxPopulationInput"
               type="number"
+              value={maxPopulationSizeInput}
               onChange={(e) => setMaxPopulationSizeInput(e.target.value)}
               onBlur={handlePopulationSizeChange}
               className={styles.input}

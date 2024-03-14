@@ -63,6 +63,7 @@ function App() {
       const passContinentFilter =
         continents.length === 0 ||
         continents.some((continent) => country.continents?.includes(continent));
+
       const passGeographicalSizeFilter =
         !geographicalSize.min | (country.area >= geographicalSize.min) &&
         (!geographicalSize.max || country.area <= geographicalSize.max);

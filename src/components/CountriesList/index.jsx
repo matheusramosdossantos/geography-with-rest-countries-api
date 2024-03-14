@@ -50,7 +50,7 @@ export default function CountriesList() {
         )}
       </ul>
       <a href="#top" className={styles.fixedAnchor}>
-        <img src="\images\favicon\icons8-globe-showing-americas-32.png" />
+        <img src="\geography-with-rest-countries-api\images\favicon\icons8-globe-showing-americas-32.png" />
       </a>
     </div>
   );

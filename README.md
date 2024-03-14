@@ -1,8 +1,21 @@
-# React + Vite
+<h1 align="center">Geography with Rest Countries API<h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
 
-Currently, two official plugins are available:
+This project is to practice my skills on integration with APIs. Also I could practice JavaScript, ReactJS and SCSS skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Principal functions:
+
+- List of all countries: I extracted from Rest Countries all the countries with some of their information and mounted a card for each one of them.
+- Search countries: on header component there is a search button from which you can insert a string to find countries.
+- Countries filter: I increased a filter component (an offcanvas) to search countries from its continent, geographical size or population size.
+
+## Used technologies:
+
+- HTML;
+- SCSS;
+- JavaScript;
+- ReactJS;
+- Vite.
+
+##
