@@ -17,3 +17,20 @@ This project is to practice my skills on integration with APIs. Also I could pra
 - JavaScript;
 - ReactJS;
 - Vite.
+
+## List of countries:
+![Geography - Countries List](https://github.com/matheusramosdossantos/geography-with-rest-countries-api/assets/150397758/84601028-2c68-491b-bbb3-a17353be8e0a)
+
+
+## Search countries: 
+![Geography - Searching country](https://github.com/matheusramosdossantos/geography-with-rest-countries-api/assets/150397758/c4bdfc4e-0e5f-4527-954e-c726b80d0113)
+
+
+## Countries filter: 
+![Geography - Continents](https://github.com/matheusramosdossantos/geography-with-rest-countries-api/assets/150397758/35b10c93-5d1d-41ab-ad62-7828e4037565)
+
+
+## Responsivity:
+![Geography - Responsivity](https://github.com/matheusramosdossantos/geography-with-rest-countries-api/assets/150397758/e7495213-f625-4950-910e-d4acb00f8d4f)
+
+
